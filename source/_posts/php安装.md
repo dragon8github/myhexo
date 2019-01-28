@@ -66,5 +66,5 @@ $ sudo cp sapi/fpm/php-fpm /usr/local/bin
 ```
 
 接下来你可能想要了解：
-- nginx 与 php 结合使用
+- [nginx 与 php 结合使用](/2019/01/25/Nginx与php结合/)
 - nginx 与 apache 结合使用
