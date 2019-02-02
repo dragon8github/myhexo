@@ -21,4 +21,5 @@ libxml2-devel \
 yum-utilsdevice-mapper-persistent-data \
 lvm2 \
 yum-utils \
+autoconf \
 ```

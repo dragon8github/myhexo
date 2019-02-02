@@ -6,7 +6,7 @@ $(function() {
     // uuid 生成器
     var MdUuid =function () {
         return Math.random().toString(36).slice(4)  
-    } 
+    }
 
     // 参数标记缓存器
     var memoized = function (fn) {
@@ -95,7 +95,7 @@ $(function() {
 
     var render = function (data) {
         // 生成list
-        var listHTML = getCacheListHtmlByfilter('', data, whileTrue);
+        var listHTML = getCacheListHtmlByfilter('', data, whileTrue)
 
         // 最终的dom
         var $myPanel = $('<div class="myPanel" id="' + PANEL_ID + '"">\
@@ -239,5 +239,5 @@ $(function() {
     $('article .article-inner').niceScroll(niceScrollConfig())
 
     // 页面滚动条美化
-    $('body').niceScroll(niceScrollConfig({ autohidemode: false }))
+    // $('body').niceScroll(niceScrollConfig({ autohidemode: false }))
 })

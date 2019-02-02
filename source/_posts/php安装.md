@@ -21,25 +21,18 @@ $ sudo yum install libxml2 libxml2-devel
 ```bash
 $ wget -O php-7.3.1.tar.gz http://cn2.php.net/get/php-7.3.1.tar.gz/from/this/mirror
 ```
-###### 3、检查配置是否健康
+
+###### 3、编译三兄贵
 ```bash
-$ ./configure --disable-fileinfo --enable-fpm --enable-so --with-mysql 
+$ ./configure --disable-fileinfo --enable-fpm
+$ make && make install 
 ```
 
 加入--disable-fileinfo是为了避免make时出现如下错误：
 > virtual memory exhausted: Cannot allocate memory 
 > make: *** [ext/fileinfo/libmagic/apprentice.lo] Error 1
 
-其中 `--enable-fpm` 是支持fpm扩展nginx，`--enable-so` 是支持apache，`--with-mysql` 是支持mysql
-
-###### 4、make 编译
-```bash
-$ make
-```
-###### 5、make 安装
-```bash
-$ sudo make install
-```
+其中 `--enable-fpm` 是支持fpm扩展
 
 安装完成之后，会出现如下提示语：
 
@@ -58,7 +51,7 @@ Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.3.1, Copyright (c) 1998-2018 Zend Technologies
 ```
 
-###### 6、创建配置文件，并将其复制到正确的位置。
+###### 4、创建配置文件，并将其复制到正确的位置。
 ```bash
 $ sudo cp php.ini-development /usr/local/php/php.ini
 $ sudo cp /usr/local/etc/php-fpm.conf.default /usr/local/etc/php-fpm.conf

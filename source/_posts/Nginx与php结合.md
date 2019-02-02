@@ -17,7 +17,7 @@ date: 2019-01-25 21:09:07
 ### 操作预览：
 1. 将 php.ini 文件中的配置项 cgi.fix_pathinfo 设置为 0
 2. 修改 `php-fpm.conf` 路径引用错误的bug
-3. 添加 www.conf，并且修改权限
+3. 添加并且修改 `www.conf`
 4. 启动 php-fpm
 5. 配置 Nginx 使其支持 PHP 应用
 6. 配置 .php 文件的请求将被传送到后端的 PHP-FPM 模块
