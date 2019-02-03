@@ -240,4 +240,24 @@ $(function() {
 
     // 页面滚动条美化
     // $('body').niceScroll(niceScrollConfig({ autohidemode: false }))
+
+    //////////////////////////////////////////////
+    // 回到头部
+    //////////////////////////////////////////////
+    var __GO_TOP_TIMER__ = null;
+    var goTop = function() {
+        cancelAnimationFrame(__GO_TOP_TIMER__);
+        __GO_TOP_TIMER__ = requestAnimationFrame(function fn() {
+            var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if (oTop > 0) {
+                document.body.scrollTop = document.documentElement.scrollTop = oTop - 500;
+                __GO_TOP_TIMER__ = requestAnimationFrame(fn);
+            } else {
+                cancelAnimationFrame(__GO_TOP_TIMER__);
+            }
+        });
+    }
+    $('.js-go-top').click(function (e) {
+        goTop()
+    });
 })
