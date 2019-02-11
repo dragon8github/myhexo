@@ -25,4 +25,27 @@ date: 2019-01-31 17:09:30
 
 
 
+> Dockerfile 支持以 ‘#’ 开头注释
+
+
+
+|	命令   |		功能      |
+|----------|:------------:|
+| FORM | 指定 base 镜像 |
+| MAINTAINER | 设置镜像的作者，可以是任意字符串 |
+| RUN | （命令三兄弟之一）在容器中运行指定命令。 |
+| CMD | （命令三兄弟之一）在容器启动时运行指定的命令。 |
+| ENTRYPOINT | （命令三兄弟之一）设置容器启动时运行的命令。 |
+| COPY | 将文件复制到镜像，`COPY src desc` 与 `COPY ["src", "desc"]` |
+| ADD | 与COPY类似，将文件复制到镜像。不同的是如果src是归档文件（zip、taz、xz等），文件会被自动解压 |
+| ENV | 设置环境变量，环境变量可被后面的指令使用如： <br> `ENV MY_VERSION 1.9.1 RUN yum install -y mypackage=$MY_VERSION` |
+| WORKDIR | 设置镜像中当前工作目录（服务于COPY、ADD、CMD、RUN、ENTRYPOINT等指令）。 |
+| EXPOSE | 指定容器中的进程会监听某个端口， Docker 可以将该端口暴漏出来。 |
+| VOLUME | 将文件或目录声明为 volume。 |
+
+注意点：
+- Dockerfile 中可以有多个 CMD 指令，但只有最后一个生效。
+- Dockerfile 中可以有多个 ENTRYPOINT 指令，但只有最后一个生效。
+- CMD 指令会被 `$ docker run [image] ...` 之后的参数替换掉。 如  `$ docker run [image] /bash/bin`
+- CMD 或 docker run 之后的参数会被当做参数传递给ENTRYPOINT。
 

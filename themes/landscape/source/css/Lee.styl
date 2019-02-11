@@ -23,6 +23,10 @@ html, body, #container, .line, code, .article-entry p, .article-entry table, inp
 }
 
 .article-entry td {
+    &:first-child {
+      padding-right: 30px !important;
+      white-space: nowrap;
+    }
     text-align: left !important;
 }
 
@@ -135,6 +139,10 @@ Lee-Card()
   &.widget-archives {
     background: url(./images/jjdjr.jpg);
     Lee-Card();
+  }
+  
+  &:hover {
+    background: none;
   }
 }
 
