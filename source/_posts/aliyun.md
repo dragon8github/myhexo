@@ -1,7 +1,13 @@
 ---
-title: 阿里云 香港服务器 3分钟搭建vpn
+title: 阿里云 香港服务器 Centos7 3分钟搞定vpn
 tags:
+- aliyun
+- centos
+- vpn
+- shadowsocks
 categories:
+- centos
+- vpn
 date: 2019-02-19 16:26:24
 ---
 
