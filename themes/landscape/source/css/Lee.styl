@@ -107,42 +107,67 @@ article.is-index {
 
   
 
-Lee-Card()
-  background-size: cover;
+Lee-Card(cardbg)
+  position: relative;
   border: 0;
   height: 350px;
   box-shadow: 4px 6px 0 hsla(0, 4%, 47%, 0.2);
   overflow: hidden;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: url(cardbg);
+    background-size: cover;
+  }
+
 
 .widget {
   &.widget-category {
-    background: url(./images/qlz.jpg);
-    Lee-Card();
+    Lee-Card("./images/qlz.jpg");
   }
 
   &.widget-tag {
-    background: url(./images/hy.jpg);
-    Lee-Card();
+    Lee-Card("./images/hy.jpg");
   }
 
   &.widget-posts {
-    background: url(./images/hzw.jpg);
-    Lee-Card();
+    Lee-Card("./images/hzw.jpg");
     height: 425px;
   }
 
   &.widget-tagcloud {
-    background: url(./images/jjdjr2.jpg);
-    Lee-Card();
+    Lee-Card("./images/jjdjr2.jpg");
   }
 
   &.widget-archives {
-    background: url(./images/jjdjr.jpg);
-    Lee-Card();
+    Lee-Card("./images/jjdjr.jpg");
+  }
+  
+  & > ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px;
+  }
+  
+  a {
+    position: relative;
+    z-index: 1;
   }
   
   &:hover {
-    background: none;
+    &::after {
+      filter: blur(7px);
+    }
+    
+    li, a {
+      color: #fff;
+    }
   }
 }
 
