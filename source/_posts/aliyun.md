@@ -20,7 +20,7 @@ date: 2019-02-19 16:26:24
 
 #### 1、安装python 和 Pip
 ```
-$ yum install python-setuptools && easy_install pip -y
+$ yum install python-setuptools && easy_install pip
 ```
 
 #### 2、安装 shadowsocks
@@ -30,7 +30,7 @@ $ pip install shadowsocks
 
 #### 3、添加 shadowsocks 的配置文件
 ```
-$ vim /etc/shadowsocks.json
+$ vi /etc/shadowsocks.json
 {
     "server": "0.0.0.0",
     "server_port": 443,
@@ -54,13 +54,22 @@ $ vim /etc/shadowsocks.json
 $ ssserver -c /etc/shadowsocks.json -d start
 ```
 
-#### 5、本机下载  shadowsocks.exe 
+#### 5、关闭防火墙
+CentOS 7.0默认使用的是firewall作为防火墙。需要使用命令关闭防火墙，否则无法使用代理。
+
+查看防火墙状态命令：firewall-cmd --state
+
+停止firewall命令：systemctl stop firewalld.service
+
+禁止firewall开机启动命令：systemctl disable firewalld.service
+
+#### 6、本机下载  shadowsocks.exe 
 链接：https://pan.baidu.com/s/17y-v40jPGIHcftuE7gGiEA 
 提取码：5gzb 
 
-#### 6、配置 shadowsocks.exe 
+#### 7、配置 shadowsocks.exe 
 ![](aliyun/1.png)
 
-#### 7、访问google.com 测试
+#### 8、访问google.com 测试
 ![](aliyun/2.png)
 
