@@ -38,13 +38,13 @@ date: 2019-03-05 10:59:17
 
 重点在于如何 **取消（Cancel）** 已经发送的请求。实际上还真有，原生的 XHR 就有提供 abort() 可以中断请求。jQuery 的 Ajax 也提供了：https://github.com/jquery/jquery/blob/master/src/ajax/xhr.js#L82
 
-```
+```JavaScript
 const xhr = ajax({ ... })
 xhr.abort()
 ```
 
 axios 也提供了类似的API，不过用起来比上面的麻烦一点，详情使用在后续的demo中：
-```
+```JavaScript
 new axios.CancelToken(_ => { ... })
 ```
 
@@ -125,7 +125,7 @@ for (var i = 0; i < 10; i++) {
 
 
 下面是axios的示例 singeAxios:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
