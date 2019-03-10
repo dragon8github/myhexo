@@ -12,11 +12,12 @@ date: 2019-03-10 13:22:26
 看上去比windows客户端多了很多选项，但实际上只需要设置这五个：
 
 
-链接：https://pan.baidu.com/s/1PKL0ViJJRJw9zkG8AlvEdQ 
-提取码：p175 
-复制这段内容后打开百度网盘手机App，操作更方便哦
+> 链接：https://pan.baidu.com/s/1PKL0ViJJRJw9zkG8AlvEdQ 
+> 
+> 提取码：p175 
 
 ### 操作步骤：
+
 0. 下载安装安卓ssr
 1. 输入ip
 2. 输入密码
