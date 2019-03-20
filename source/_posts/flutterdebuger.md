@@ -1,5 +1,5 @@
 ---
-title: flutterdebuger
+title: flutter Android debuger
 tags:
   - flutter
 categories:
