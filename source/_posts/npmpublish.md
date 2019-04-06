@@ -21,6 +21,8 @@ date: 2019-03-20 10:48:27
 7. 什么是 2FA？什么是 Authenticator App？什么是 One-time Password？
 8. （后记）补充说明
 
+<!--more--> 
+
 #### 一、验证你的包名是否重复
 
 有两种方案：

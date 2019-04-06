@@ -23,6 +23,8 @@ https://webdev.dartlang.org/tools/webstorm
 > pub global activate stagehand
 ```
 
+<!--more--> 
+
 #### 4、新建一个Dart项目
 
 ![Create Dart](http://wx3.sinaimg.cn/large/006ar8zggy1g0d0u82axpj30r00gwjsm.jpg)

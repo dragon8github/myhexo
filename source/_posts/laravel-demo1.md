@@ -37,6 +37,8 @@ class SitesController extends Controller
 
 这里的 welcome 页面是在：**\resources\views\welcome.blade.php**
 
+<!--more--> 
+
 2、打开 **\routes\web.php**，修改内容为：
 
 ```php

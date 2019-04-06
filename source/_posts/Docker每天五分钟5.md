@@ -31,6 +31,8 @@ Status: Downloaded newer image for centos:latest
 
 自动下载了最新版本的 Centos 镜像，并且运行和进入了容器（ea9b3dcd88ad）。
 
+<!--more--> 
+
 ###### (2) 修改容器
 
 这里示例安装 vim 

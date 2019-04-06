@@ -11,6 +11,8 @@ date: 2019-01-31 15:39:33
 
 切换国内 [DaoCloud](https://dashboard.daocloud.io/settings/profile) 镜像服务。 [免费注册](https://account.daocloud.io/signup)后进入控制台，找到右上角的[加速器图标](https://www.daocloud.io/mirror)。
 
+<!--more--> 
+
 ![加速器](Docker每天五分钟2/3.png)
 
 然后找到Linux的配置命令。

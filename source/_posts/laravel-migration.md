@@ -23,7 +23,7 @@ DB_PASSWORD=root
 ```
 
 再打开数据库配置文件 `\config\database.php`，检查当前的 Mysql 数据库配置：
-
+<!--more--> 
 ```php
 <?php
 

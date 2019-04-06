@@ -23,3 +23,5 @@ lvm2 \
 yum-utils \
 autoconf \
 ```
+
+<!--more--> 

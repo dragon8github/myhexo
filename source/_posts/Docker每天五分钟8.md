@@ -16,6 +16,8 @@ date: 2019-02-11 20:29:04
 （2）CMD： 配置容器启动后默认执行的命令及其参数，但 CMD 会被 `$ docker run` 后面跟的命令行参数替换。比如 `$ docker run -it [image] /bash/bin`， 那么 CMD 指令会被忽略掉。
 （3）ENTRYPOINT：配置容器启动时运行的命令。
 
+<!--more--> 
+
 # RUN
 RUN 指令会创建新的镜像层。 通常用于安装应用和软件包。 Dockerfile 中常常包含多个 RUN 指令。
 

@@ -18,6 +18,8 @@ date: 2019-02-19 16:26:24
 [阿里云主机搭建VPN服务](https://blog.csdn.net/ztx114/article/details/80423705)
 [在免费EC2上搭建自己的VPN](https://my.oschina.net/imcf/blog/659230)
 
+<!--more--> 
+
 #### 1、安装python 和 Pip
 ```
 $ yum install python-setuptools && easy_install pip
@@ -72,4 +74,38 @@ CentOS 7.0默认使用的是firewall作为防火墙。需要使用命令关闭�
 
 #### 8、访问google.com 测试
 ![](aliyun/2.png)
+
+# 后记
+
+test.sh
+> $ vi test.sh
+> $ chmod 777 test.sh
+
+```
+#!/bin/bash
+
+yum install python-setuptools && easy_install pip
+
+pip install shadowsocks
+
+cat>/etc/shadowsocks.json<<EOF
+{
+    "server": "0.0.0.0",
+    "server_port": 443,
+    "local_address": "127.0.0.1",
+    "local_port": 1080,
+    "password": "daweiyixiangshihao",
+    "timeout": 300,
+    "method": "aes-256-cfb",
+    "fast_open": false,
+    "workers": 1
+}
+EOF
+
+ssserver -c /etc/shadowsocks.json -d start
+
+systemctl stop firewalld.service
+
+systemctl disable firewalld.service
+```
 

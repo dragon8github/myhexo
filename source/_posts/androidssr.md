@@ -11,6 +11,7 @@ date: 2019-03-10 13:22:26
 
 看上去比windows客户端多了很多选项，但实际上只需要设置这五个：
 
+<!--more-->
 
 > 链接：https://pan.baidu.com/s/1PKL0ViJJRJw9zkG8AlvEdQ 
 > 

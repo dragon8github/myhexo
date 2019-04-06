@@ -27,7 +27,7 @@ $ wget -O php-7.3.1.tar.gz http://cn2.php.net/get/php-7.3.1.tar.gz/from/this/mir
 $ ./configure --disable-fileinfo --enable-fpm
 $ make && make install 
 ```
-
+<!--more--> 
 加入--disable-fileinfo是为了避免make时出现如下错误：
 > virtual memory exhausted: Cannot allocate memory 
 > make: *** [ext/fileinfo/libmagic/apprentice.lo] Error 1

@@ -22,6 +22,7 @@ const timer = (function(fn, t) {
     return setInterval(fn, t)
 })(f, 1500)
 ```
+<!--more--> 
 
 二、善用闭包，就可以轻松实现缓存模式、单例模式。
 

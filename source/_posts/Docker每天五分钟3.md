@@ -14,6 +14,8 @@ hello-world 是 Docker 官方提供的一个镜像。通常用来验证 Docker �
 $ docker pull hello-world
 ```
 
+<!--more--> 
+
 使用 `$ docker images` 查看镜像是否下载成功。 发现才不到2kb！ 
 
 ![Size 1.84kB](Docker每天五分钟3/1.png)

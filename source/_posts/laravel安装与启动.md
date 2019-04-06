@@ -34,7 +34,7 @@ $ php -S localhost:8000 -t public
 ```bash
 $ php artisan serve
 ```
-
+<!--more--> 
 ![](laravel-start/2.png)
 
 预览 [http://localhost:8000](http://localhost:8000) ，效果如下：

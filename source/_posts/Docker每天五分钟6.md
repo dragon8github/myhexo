@@ -21,6 +21,8 @@ Dockerfile 内容如下：
 
 开始构建
 
+<!--more--> 
+
 ```bash
 $ docker build -t centos-with-vim .
 ```

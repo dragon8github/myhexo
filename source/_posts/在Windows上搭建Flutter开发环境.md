@@ -17,7 +17,7 @@ date: 2019-02-20 16:08:58
 4、在 Android Studio 的 **Browse repositories** 安装 **Flutter** 和 **Dart** 插件
 - Flutter插件： 支持Flutter开发工作流 (运行、调试、热重载等)。
 - Dart插件： 提供代码分析 (输入代码时进行验证、代码补全等)。
-
+<!--more--> 
 欢迎页 -> configure -> Plugins -> Browse repositories... -> Search
 
 ![configure](http://wx4.sinaimg.cn/large/006ar8zggy1g0cy57wy3qj30mr0ng3zw.jpg)

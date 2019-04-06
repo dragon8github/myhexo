@@ -19,6 +19,8 @@ $ cnpm install hexo-asset-image --save
 post_asset_folder: true
 ```
 
+<!--more--> 
+
 完成安装后用hexo新建文章的时候会发现_posts目录下面会多出一个和文章名字一样的文件夹。
 
 ![](hexo插入本地图片/3.png)

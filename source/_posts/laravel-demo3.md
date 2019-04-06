@@ -31,7 +31,7 @@ categories:
 ```
 
 \resources\views\sites\about.blade.php
-
+<!--more--> 
 ```html
 @extends('layouts/app')
 @section('content')

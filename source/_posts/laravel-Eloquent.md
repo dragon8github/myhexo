@@ -12,7 +12,7 @@ categories:
 # 一、数据建模
 
 创建一个名为 `Article` 的 Eloquent Model，Laravel 会自动将其与 Article 数据表关联。
-
+<!--more--> 
 ```php
 $ php artisan make:model Article
 ```

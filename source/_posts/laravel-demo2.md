@@ -21,7 +21,7 @@ categories:
 </body>
 </html>
 ```
-
+<!--more--> 
 2、新增 **about** 路由
 
 \routes\web.php
