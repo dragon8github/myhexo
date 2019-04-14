@@ -3,11 +3,24 @@
 //   src : url('./fonts/HYLeMiaoTiW.ttf');
 // }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-html, body, #container, .line, code, .article-entry p, .article-entry table, input {
+#container, .line, code, .article-entry p, .article-entry table, input {
   height: 100%
   font-family: 'comic sans ms', 'HYLeMiaoTiW', sans-serif !important;
   font-size: 17px;
+}
+
+#header-title {
+  margin: auto !important;
+  top: 20% !important;
+}
+
+#wrap {
+  position: relative !important;
 }
 
 .fr {
@@ -119,6 +132,7 @@ Lee-Card(cardbg)
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     background: url(cardbg);
+    // background: #FFF2AB;
     background-size: cover;
   }
 
