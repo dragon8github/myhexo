@@ -1,5 +1,5 @@
 ---
-title: djangoandmysql
+title: django 与 mysql 勾结指南
 tags:
   - django
   - mysql
